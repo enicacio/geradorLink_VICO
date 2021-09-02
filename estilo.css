@@ -1,0 +1,96 @@
+html,
+:root {
+  height: 100%;
+}
+input {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  background-color: #cecece;
+  background-image: url(./endless-constellation.svg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+#headerform {
+  background-color: transparent; 
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  margin: 0px 0;
+  padding-top: 0px;
+}
+#formulario {
+  width: 700px;
+  min-height: none;
+  background-color: transparent;
+  border-radius: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: "Open Sans", sans-serif;
+}
+#formulario legend { /*Tag <legend> */
+  color: #cecece;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+  padding: 2px 0;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+}
+.input-group label { /*Tag <label> */
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color:rgb(194, 193, 193);
+  cursor: pointer;
+}
+.input-group input:not([type="checkbox"]) { /*Campo para Input das informações */
+  background: #dedddd;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding: 8px 10px;
+  display: block;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+.input-group input:focus {
+  border-color: #20b2aa; /* Cor do input quando selecionado */
+}
+.input-group input::placeholder { /* Texto de orientação para preenchimento dentro do input */
+  color: #686868;
+  font-weight: 300;
+}
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(102, 102, 102);
+  font-weight: normal;
+  text-align: center;
+  font-size: 14px;
+}
+.botao { /* Botão de enviar */
+  background: hsl(49, 100%, 50%);
+  border: 1px solid hsl(44, 100%, 50%);
+  border-radius: 2px;
+  padding: 10px 15px;
+  border: none;
+  color: black;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  justify-content: center;
+  width: 30%;
+  text-align: center;
+}
+.botao:hover {
+  background: hsla(44, 100%, 50%, 0.493) ;
+}

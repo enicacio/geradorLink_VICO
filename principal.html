@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive Meta/Adaptação Mobile -->
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <!-- Fontes do Google -->
+
+
+    <!-- Script Java -->
+    <script src="./script.js"></script>
+
+    <title>Gerador de links Agência VICO</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <!-- Formulário -->
+            <form id="formulario" name="formulario">
+                <legend id="headerform">
+                    Formulário Gerador de Link Agência VICO
+                    <br><small style="font-size: 14px; font-weight: normal;">Preencha todos os campos, e em seguida
+                        click em "Gerar Link"</muted></small>
+                </legend>
+                <br>
+
+                <fieldset>
+                    <!-- 1º campo: Link da página -->
+                    <br>
+                    <div class="input-group">
+                        <label for="linkPagina">Link da Página:</label>
+                        <input type="text" id="linkPagina" name="linkPagina" placeholder="Insira o link principal" required>
+                    </div>
+                    <br>
+
+                    <!-- 2º campo: Plataforma -->
+                    <div class="input-group">
+                        <label for="plataforma">Plataforma:</label>
+                        <input type="text" id="plataforma" name="plataforma" placeholder="Facebook, Instagram, etc" required>
+                    </div>
+                    <br>
+
+                    <!-- 3º campo: Anúncio -->
+                    <div class="input-group">
+                        <label for="anuncio">Anúncio:</label>
+                        <input type="text" id="anuncio" name="anuncio" placeholder="Código ou Identificação do Anúncio" required>
+                    </div>
+                    <br>
+
+                    <!-- 4º campo: Público -->
+                    <div class="input-group">
+                        <label for="publico">Público:</label>
+                        <input type="text" id="publico" name="publico" placeholder="Tipo de público" required>
+                    </div>
+                    <br>
+
+                    <!-- Botão Validar e Enviar -->
+                    <div align="center">
+                        <p style="font-weight: bold; color: white; margin-top: 0px; margin-bottom: 25px;">Revise os
+                            campos
+                            antes de gerar o link!</p>
+                        <button type="button" class="botao" onclick="concatenar()">ENVIAR</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <p><small>| Desenvolvido por Agência VICO |</small>
+                    <br><small><i>Todos os direitos reservados</i></small>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
