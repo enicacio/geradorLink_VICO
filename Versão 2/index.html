@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive Meta/Adaptação Mobile -->
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <!-- Fontes do Google -->
+
+
+    <!-- Script Java -->
+    <script src="./script.js"></script>
+    <script src="./copiartexto.js"></script>
+
+    <title>Gerador de links Agência VICO</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <!-- Formulário -->
+            <form id="formulario" name="formulario">
+                <legend id="headerform">
+                    Gerador de Link Whatsapp Agência VICO
+                    <br><small style="font-size: 14px; font-weight: normal;">Preencha todos os campos, e em seguida
+                        click em "Gerar Link"</muted></small>
+                </legend>
+                <br>
+
+                <fieldset>
+                    <!-- 1º campo: Número Whatsapp -->
+                    <br>
+
+                    <div class="input-group">
+                        <label for="number">Número com DDD sem caracteres especiais:</label>
+                        <input type="text" id="number" name="number" placeholder="EX: 15981820426" required>
+                    </div>
+                    <br>
+
+                    <!-- 2º campo: Mensagem -->
+                    <div class="input-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <input type="text" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui!" required>
+                    </div>
+                    <br>
+
+
+                    <!-- Botão Validar e Enviar -->
+                    <div align="center">
+                        <p style="font-weight: bold; color: white; margin-top: 0px; margin-bottom: 25px;">Preencha TODOS os
+                            campos
+                            antes de gerar o link!</p>
+
+                        <input type="button" value="GERAR LINK" class="button" onclick=concatenar()>
+                        <input type="button" value="COPIAR LINK" class="button" onclick=copiartexto()>
+
+                    <!-- 6º campo: Link Pronto -->
+                    <br><br>
+                     <div class="link-pronto">
+                        <label for="link"></label>
+                        <input type="text" id="link" name="link" readonly>
+                        <br>
+                        
+                        
+
+                    </div>
+                    <br>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <p><small>| Desenvolvido por Agência VICO |</small>
+                    <br><small><i>© Todos os direitos reservados</i></small>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
